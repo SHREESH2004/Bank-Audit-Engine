@@ -17,3 +17,6 @@ Aggregate fnc:
 COUNT:SELECT COUNT(use primary key or null same answer) from employees;
 Select SUM(salary) from employees;
 
+
+Select dept fromemployees group by dept;
+Select dept, count(emp_id) from employees group by dept;
