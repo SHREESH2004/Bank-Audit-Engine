@@ -4,3 +4,9 @@ using aliases: Select concat(fname,lname) as fullname from employee;
 Select emp_id,concat(fname,lname) as fullname,dept from employee;
 
 
+Replace: Select emp_id,fname,lname,replace(dept,'IT','TECH') from employee;
+
+Highest salasry: Select emp_id,fname,lname,salary from employee order by salary desc limit 1; 
+Select emp_id,fname,lname,salary from employee where salary=(select max(salary) from employee);
+
+
