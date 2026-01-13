@@ -8,3 +8,4 @@ alter table employee alter column fname set data type varchar(200);
 CREATE TABLE CONTACT{
     MOB VARCHAR(200) check (length(MOB)>=10);
 }
+
