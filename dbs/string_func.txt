@@ -1,0 +1,2 @@
+Select concat(fname,lname) from employee;
+It will appear in concat column.
