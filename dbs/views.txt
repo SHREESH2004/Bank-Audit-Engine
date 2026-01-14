@@ -1,0 +1,6 @@
+CREATE VIEW billing_info as
+select * from employee e join student s on e.s_id=s.s_id
+join courses s on e.c_id=c.c_id;
+
+then if
+select * from billing_info; -- same result
