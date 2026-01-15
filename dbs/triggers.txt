@@ -1,0 +1,17 @@
+a Trigger is a specialized stored procedure that automatically executes (or "fires") 
+in response to a specific event on a table or view.
+
+
+select * from employees;
+
+call update_emp_salary(1,-52000);
+
+create or replace function checksalasry()
+return trigger as $$
+Begin
+if new.salary<0 then 
+new.salasry=0;
+end if;
+return new;
+end;
+$$language plpgsql;
