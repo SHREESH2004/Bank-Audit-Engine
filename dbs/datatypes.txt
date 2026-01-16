@@ -7,4 +7,4 @@ Boolean- BOOLEAN
 Check in postres documentation for datatypes
 NOT NULL
 
-Constraints: Auto increment; ex:- id int serial , for large bigserial before datatype
+Constraints: Auto increment; ex:- id int serial , for large bigserial before datatype.
