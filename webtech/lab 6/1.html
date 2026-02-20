@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AJAX Customer Fetch</title>
+    <style>
+        table { border-collapse: collapse; width: 80%; margin: 20px; }
+        button { padding: 10px 20px; cursor: pointer; background: #2196F3; color: white; border: none; }
+    </style>
+</head>
+<body>
+
+    <h2>AJAX XML Data Fetch</h2>
+    <button type="button" onclick="loadDoc()">Get Customer Details</button>
+    <br><br>
+
+    <table id="demo">
+        <tr>
+            <th>Customer Name</th>
+            <th>Date</th>
+            <th>Product</th>
+            <th>Price</th>
+        </tr>
+    </table>
+
+    <script>
+    function loadDoc() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                myFunction(this);
+            }
+        };
+        xhttp.open("GET", "x.xml", true);
+        xhttp.send();
+    }
+
+    function myFunction(xml) {
+        var i;
+        var xmlDoc = xml.responseXML;
+        var table = "<tr><th>Name</th><th>Date</th><th>Product</th><th>Price</th></tr>";
+        var x = xmlDoc.getElementsByTagName("CUSTOMER");
+        
+        for (i = 0; i < x.length; i++) { 
+            table += "<tr><td>" +
+            x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue + "</td><td>" +
+            x[i].getElementsByTagName("DATE")[0].childNodes[0].nodeValue + "</td><td>" +
+            x[i].getElementsByTagName("PRODUCT")[0].childNodes[0].nodeValue + "</td><td>" +
+            x[i].getElementsByTagName("PRICE")[0].childNodes[0].nodeValue + "</td></tr>";
+        }
+        document.getElementById("demo").innerHTML = table;
+    }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<DOCUMENT>
+    <CUSTOMER>
+        <NAME>Hari Krishna</NAME>
+        <DATE>10/09/2008</DATE>
+        <PRODUCT>Mobile Set</PRODUCT>
+        <PRICE>Rs.14000/-</PRICE>
+    </CUSTOMER>
+    <CUSTOMER>
+        <NAME>Anil Kumar</NAME>
+        <DATE>10/09/2008</DATE>
+        <PRODUCT>Monitor</PRODUCT>
+        <PRICE>Rs.14000/-</PRICE>
+    </CUSTOMER>
+</DOCUMENT>
