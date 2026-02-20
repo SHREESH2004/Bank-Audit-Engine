@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+}
+
+.container {
+    width: 750px;
+    margin: 30px auto;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.header {
+    background: linear-gradient(#b30000, #800000);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.sub-header {
+    display: flex;
+    background: #1c1c1c;
+    color: white;
+}
+
+.sub-header div {
+    flex: 1;
+    padding: 12px;
+    border-right: 1px solid #444;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-section {
+    background: #2b2b2b;
+    color: white;
+    padding: 15px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+}
+
+.row label {
+    width: 45%;
+}
+
+.row select,
+.row input {
+    width: 45%;
+    padding: 6px;
+}
+
+.result-header {
+    background: #b30000;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.result-section {
+    padding: 15px;
+    background: #f9f9f9;
+}
+
+.result-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.result-row label {
+    width: 50%;
+}
+
+.result-row input {
+    width: 40%;
+    padding: 5px;
+}
+
+.buttons {
+    text-align: center;
+    padding: 15px;
+}
+
+button {
+    padding: 8px 20px;
+    background: #b30000;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #800000;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+    color: gray;
+}

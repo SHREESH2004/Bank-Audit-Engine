@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Income Tax Calculator</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">TAXMANN'S</div>
+
+    <div class="sub-header">
+        <div>TAX CALCULATOR</div>
+        <div>INCOME & TAX CALCULATOR</div>
+    </div>
+
+    <div class="form-section">
+
+        <div class="row">
+            <label>Step 1 : Assessment Year</label>
+            <select>
+                <option>2020-21</option>
+                <option>2021-22</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label>Step 2 : Tax Payer</label>
+            <select>
+                <option>Individual</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label>Step 3 : Gender</label>
+            <select>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label>Step 4 : Residential Status</label>
+            <select>
+                <option>Resident</option>
+            </select>
+        </div>
+
+        <div class="row">
+            <label>Step 5 : Net Taxable Income</label>
+            <input type="number" id="income" placeholder="Enter income">
+        </div>
+
+    </div>
+
+    <div class="result-header">YOUR TAX COMPUTATION</div>
+
+    <div class="result-section">
+
+        <div class="result-row">
+            <label>Income Tax</label>
+            <input type="text" id="tax" readonly>
+        </div>
+
+        <div class="result-row">
+            <label>Surcharge</label>
+            <input type="text" id="surcharge" readonly>
+        </div>
+
+        <div class="result-row">
+            <label>Health & Education Cess (4%)</label>
+            <input type="text" id="cess" readonly>
+        </div>
+
+        <div class="result-row">
+            <label>Total Tax Liability</label>
+            <input type="text" id="total" readonly>
+        </div>
+
+    </div>
+
+    <div class="buttons">
+        <button onclick="calculateTax()">Calculate</button>
+        <button onclick="resetForm()">Reset</button>
+    </div>
+
+    <div class="footer">
+        As per Finance (No. 2) Bill, 2019<br>
+        Supported by www.taxmann.com
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

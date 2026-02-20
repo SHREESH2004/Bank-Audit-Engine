@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Q1 - Text Formatting Tags</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; background: #f9f9f9; }
+    h2 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 8px; }
+    .demo-box { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th { background: #3498db; color: white; padding: 10px; }
+    td { padding: 10px; border: 1px solid #ddd; }
+    tr:nth-child(even) { background: #f2f2f2; }
+    code { background: #eee; padding: 2px 6px; border-radius: 3px; font-family: monospace; }
+  </style>
+</head>
+<body>
+  <h2>Q1: HTML Text Formatting Tags Demo</h2>
+
+  <div class="demo-box">
+    <p>
+      This paragraph demonstrates various HTML formatting tags.
+      The word <b>bold</b> uses the &lt;b&gt; tag for bold text.
+      The word <i>italic</i> uses the &lt;i&gt; tag for italic text.
+      The word <u>underlined</u> uses the &lt;u&gt; tag for underlined text.
+      The word <strong>strong</strong> uses the &lt;strong&gt; tag for semantically important text.
+      The word <em>emphasized</em> uses the &lt;em&gt; tag for emphasized text.
+      The word <mark>highlighted</mark> uses the &lt;mark&gt; tag to highlight text.
+    </p>
+  </div>
+
+  <h3>Tag Reference Table</h3>
+  <table>
+    <tr><th>Tag</th><th>Output</th><th>Purpose</th></tr>
+    <tr><td><code>&lt;b&gt;</code></td><td><b>Bold Text</b></td><td>Stylistic bold (no semantic weight)</td></tr>
+    <tr><td><code>&lt;i&gt;</code></td><td><i>Italic Text</i></td><td>Stylistic italic (no semantic weight)</td></tr>
+    <tr><td><code>&lt;u&gt;</code></td><td><u>Underlined Text</u></td><td>Underline text</td></tr>
+    <tr><td><code>&lt;strong&gt;</code></td><td><strong>Strong Text</strong></td><td>Semantically important text</td></tr>
+    <tr><td><code>&lt;em&gt;</code></td><td><em>Emphasized Text</em></td><td>Semantically emphasized text</td></tr>
+    <tr><td><code>&lt;mark&gt;</code></td><td><mark>Highlighted Text</mark></td><td>Highlight / mark relevant text</td></tr>
+  </table>
+
+  <!--
+    EXPLANATION:
+    - <b> makes text visually bold but has no semantic meaning.
+    - <i> makes text visually italic but has no semantic meaning.
+    - <u> underlines text, often used for annotations or stylistic purposes.
+    - <strong> marks text as semantically important; screen readers emphasize it.
+    - <em> marks text as semantically emphasized; screen readers stress it.
+    - <mark> highlights text with a yellow background (default), used to draw attention.
+  -->
+</body>
+</html>

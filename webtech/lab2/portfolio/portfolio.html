@@ -7,23 +7,34 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="portfolio.css" />
 </head>
-<body>
+<body style="font-family: 'Inter', sans-serif; margin:0; padding:0;">
 
 <div class="container">
 
-<header>
-  <div>
+<header style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:40px; padding:20px 0;">
+
+  <div style="flex:1; min-width:250px;">
     <h1>Shreesh Sanyal</h1>
     <p>
       Backend & Full-Stack Engineer specializing in scalable APIs, microservices,
       event-driven systems, and AI-assisted platforms.
     </p>
   </div>
-  <div class="contact">
-    <a href="mailto:shreeshsanyal@gmail.com">shreeshsanyal@gmail.com</a>
-    <a href="https://linkedin.com/in/shreesh-sanyal" target="_blank">LinkedIn</a>
-    <a href="https://github.com/SHREESH2004" target="_blank">GitHub</a>
+
+  <div style="text-align:center; min-width:200px;">
+    <img 
+      src="profile.jpg" 
+      alt="Shreesh Sanyal"
+      style="width:160px; height:160px; border-radius:50%; object-fit:cover; border:4px solid #111; margin-bottom:15px;"
+    />
+
+    <div class="contact" style="display:flex; flex-direction:column; gap:8px;">
+      <a href="mailto:shreeshsanyal@gmail.com">shreeshsanyal@gmail.com</a>
+      <a href="https://linkedin.com/in/shreesh-sanyal" target="_blank">LinkedIn</a>
+      <a href="https://github.com/SHREESH2004" target="_blank">GitHub</a>
+    </div>
   </div>
+
 </header>
 
 <section class="grid-2">
@@ -114,7 +125,7 @@
 
 </section>
 
-<footer>
+<footer style="text-align:center; padding:20px 0;">
   © 2026 Shreesh Sanyal
 </footer>
 
